@@ -1,0 +1,13 @@
+Tema/ Opçoes / Visualização de Posiçoes / ativado ?tp=1
+
+http://www.joomla24.com/6/6.html
+
+Tema
+extençoes/ gerenciar
+
+pontos positivos
+1.O Joomla é em MVC
+
+2.Há muitas opções de se extender um website
+
+3. O conceito de organização de conteúdo por sessão e categorias, posições e divisão quanto ao tipo de extensão: plugin, módulo e tema, são ótimos e facilitam bastante o entendimento e organização do conteúdo.

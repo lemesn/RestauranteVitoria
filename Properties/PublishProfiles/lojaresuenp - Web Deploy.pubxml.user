@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGkpYOefu+UqHA6RB4rj9hQAAAAACAAAAAAAQZgAAAAEAACAAAACu8ehppXkimbUO9jH2ZbyaO659htxib7hgyT3WwUg8+AAAAAAOgAAAAAIAACAAAAC+xIjXG3QgzbJxE/CMEXLFUyfDYB6n5br3Nb6FJygSdYAAAADl1kKc77wMwt2lSpD/7Ume/ldC8pu8F1v5aXKQPyvpscQIC/mXB7zu9oJO5S55+V1nxJvS9fubx+ZkJ0M2UMRHhhMlVgnpixVjx4ksmUGqyk2f1oU3XXl0ifeGn3WUR+pKREgujAxT4bfL68BZMjliGi28wNyQFpkUNYp5pKAR20AAAAAKCM33KlIWyjV7drOrofZSq6+Y5aoQR8r6v+fq9wDu7aMa2649d1T1uUScsbahh4CM0+7Q1ZO4PtRkdPorDAta</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=restaurantevitoris.database.windows.net;Initial Catalog=BandoDados;Integrated Security=False;User ID=rafael;Password=R@fael1996;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

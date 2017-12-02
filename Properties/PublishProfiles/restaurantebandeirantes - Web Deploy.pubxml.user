@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGkpYOefu+UqHA6RB4rj9hQAAAAACAAAAAAAQZgAAAAEAACAAAADsBvwPfM+inffxN1USrceCEZQrKpdva2TDsPQGs/a6aAAAAAAOgAAAAAIAACAAAACrl3ENLtj/IOsCNy9ZYW/v5f2GMERgiUDQ9UiY/OiJq4AAAADETOKS08PdwSDhSY+68NUuGR8yHsCpo/kGhhDRKGEsCBm+7vY6fboTP9muHibzHIXHl/eFt9KAOtI0VGjz4MFruTU0D9aBT2abfDoNkWe1ApH73gI9tRlNNVMi62mUI8xMYcHnw0dhqaDb5gGYXXc0b64naKpqWhQmKM7uO7QxJEAAAADB0QBV6Afd5nXNxIvl9tVfmzyK/6QJp9lkmHNcxqpVdHFf5e3JSsK4Q/0IKnCnVEjVTTXdw5a8jAM2JQKQHkk+</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source= DESKTOP-KSPKBC9; Initial Catalog=RestauranteBD; Integrated Security=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

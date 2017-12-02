@@ -1,0 +1,74 @@
+@model IEnumerable<VitoriaRestaurante.Models.UnitResult>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/Style.css">
+<link href="/css/font.css" rel="stylesheet" type="text/css">
+<link href="/css/font2.css" rel="stylesheet" type="=text/css">
+<style>
+    hr {
+        margin-top: 20px;
+        border: 0;
+        border-top: 1px solid #eee;
+    }
+
+    ._2pi8 {
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-top: 10em;
+    }
+
+    th, td {
+        font-size: 18px;
+    }
+</style>
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Vitoria <br /> Restaurante
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Review</p>
+        </div>
+    </div>
+</div>
+
+
+<br />
+
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Data</th>
+            <th>Restaurante</th>
+            <th>Review</th>
+            <th>Nota</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.Assignment1Mark</td>
+
+            <td>@item.ExamMark</td>
+            <td>@item.Grade</td>
+
+            <td> @item.StudentName</td>
+            <td>@item.TotalMark</td>
+        </tr>
+}
+    </tbody>
+</table>

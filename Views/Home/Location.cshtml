@@ -1,0 +1,204 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/Style.css">
+<link href="/css/font.css" rel="stylesheet" type="text/css">
+<link href="/css/font2.css" rel="stylesheet" type="=text/css">
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXH3B1hH_44BUuktxEzqXa2qtQJtSAIEM"></script>
+<!--This is the header of the page-->
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Vitória <br /> Restaurante
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Localização</p>
+        </div>
+    </div>
+</div>
+<!-- This is the div that will contain the Google Map -->
+<div id="map">
+    <!--Map is showed here-->
+</div>
+
+<!-- Enclose the Javascript in a "section" so that it is rendered in the correct order after scripts have been loaded etc -->
+@section scripts {
+    <section class="scripts">
+        <script id="Mega Espeto" type="text/html">
+            <h3>Mega Espeto</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/noodle_logo.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            "Pioneiro na área de carnes desde 1989 trabalhando com carnes nobres, vindo o ano de 2000 expandindo seus negócios na área de eventos, facilitando a vida do cliente, com uma linha prática e cômoda para seu evento. Trabalhando com uma gama com mais de 25 tipos de espetinhos. Paralelamente montamos toda uma estrutura voltada para grandes e pequenos eventos."
+                            <br /> <a class="click-here" href="https://www.megaespeto.com.br/" target="_blank">Clque aqui</a> para o Mega Espeto website.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="SUBWAY" type="text/html">
+            <h3>SUBWAY</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/jamie_logo.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            "Hoje, a marca SUBWAY® é a maior cadeia de sanduíches "submarinos" do mundo, com mais de 39 mil unidades em todo o mundo. Nós nos tornamos a principal opção para pessoas que procuram refeições rápidas e nutritivas, que toda a família pode apreciar.
+                            <br /> <a class="click-here" href="http://www.subway.com" target="_blank">Clique aqui</a> para SUBWAY website.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="Açai Wave" type="text/html">
+            <h3>Açai Wave</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/chairman_logo.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            "Atualmente a nossa rede conta com lojas instaladas no sul do Estado de São Paulo e norte do Estado do Paraná, e continua atraindo novos investidores que procuram qualidade e a diversidade dos produtos apresentados pelo Açaí Wave. E assim, seguimos com a nossa metodologia de crescimento e transformando em realidade os sonhos individuais.
+                            <br /> <a class="click-here" href="http://acaiwave.com.br" target="_blank">Clique aqui</a> para Açai Wave.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="Restaurante da Val" type="text/html">
+            <h3>Restaurante da Val</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/bluginger_logo.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            "Comida caseira faz sucesso. Apostando em pratos preparados com temperos naturais, restaurante familiar"
+                            <br /> <a class="click-here" href="https://www.facebook.com/pages/Restaurante-da-Val/" target="_blank">Clique aqui</a> Para o Restaurante da Val paginá Facebook.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="Sancre e Bete Sucos e Lanches" type="text/html">
+            <h3>Sancre e Bete Sucos e Lanches</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/jewel_logo.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            "Encontrar um equilíbrio entre pratos inspirados em receitas autênticas.
+                            A cozinha clássica vê um seguimento leal dos habitantes locais, para uma
+                            festa deliciosa."
+                            <br /> <a class="click-here" href="https://www.facebook.com/Sancré-Lanches-639015866200013" target="_blank">Clique aqui</a> para o Sancre e Bete Sucos e Lanches paginá Facebook.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script id="Restaurante Kojó" type="text/html">
+            <h3>Restaurante Kojó</h3>
+            <div class="row">
+                <div>
+                    <div class="col-md-3">
+                        <img class="img-logo" src="~/images/location/is_logo.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <p class="restaurant-text-map">
+                            "Restaurante Kojó é conhecido em diversos estados, e muitos clientes, quando de passagem por nossa região, fazem questão de incluírem o Restaurante Kojó em seu roteiro. A marca Kojó é uma referência gastronômica em nossa região. Diariamente, recebe clientes de Bandeirantes e outros estados de todo Brasil."<br /> 
+                            <a class="click-here" href="http://www.restaurantekojo.com" target="_blank">Clique aqui</a> para Kojó website.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script type="text/javascript">
+
+
+            $(document).ready(function () {
+                Initialize();
+            });
+
+            // Where all the fun happens
+            function Initialize() {
+
+                // Google has tweaked their interface somewhat - this tells the api to use that new UI
+                google.maps.visualRefresh = true;
+                var Bandeirantes = new google.maps.LatLng(-23.1054048, -50.3714912);
+
+                // These are options that set initial zoom level, where the map is centered globally to start, and the type of map to show
+                var mapOptions = {
+                    zoom: 14,
+                    center: Bandeirantes,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                // This makes the div with id "map" a google map
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+                // a sample list of JSON encoded data of places to visit in Tunisia
+                // you can either make up a JSON list server side, or call it from a controller using JSONResult
+                var data = [
+                    { "Id": 1, "PlaceName": "Restaurante Kojó", "GeoLong": "-50.37521325", "GeoLat": "-23.10847536" },
+                    { "Id": 2, "PlaceName": "SUBWAY", "GeoLong": "-50.37542783", "GeoLat": "-23.10600341" },
+                    { "Id": 3, "PlaceName": "Açai Wave", "GeoLong": "-50.36932044", "GeoLat": "-23.10780187" },
+                    { "Id": 4, "PlaceName": "Restaurante da Val", "GeoLong": "-50.37207507", "GeoLat": "-23.09441521" },
+                    { "Id": 5, "PlaceName": "Mega Espeto", "GeoLong": "-50.36526158", "GeoLat": "-23.10917845" },
+                    { "Id": 6, "PlaceName": "Sancre e Bete Sucos e Lanches", "GeoLong": "-50.37429694", "GeoLat": "-23.09768428" }
+                ];
+
+                // Using the JQuery "each" selector to iterate through the JSON list and drop marker pins
+                $.each(data, function (i, item) {
+                    var marker = new google.maps.Marker({
+                        'position': new google.maps.LatLng(item.GeoLat, item.GeoLong),
+                        'map': map,
+                        'title': item.PlaceName
+                    });
+
+                    var div = document.createElement('div');
+                    div.setAttribute('class', 'someClass');
+                    div.innerHTML = document.getElementById(item.PlaceName).innerHTML;
+
+                    // put in some information about each json object
+                    var infowindow = new google.maps.InfoWindow({
+
+                    });
+                    infowindow.setContent(div);
+                    // finally hook up an "OnClick" listener to the map so it pops up out info-window when the marker-pin is clicked!
+                    google.maps.event.addListener(marker, 'click', function () {
+                        infowindow.open(map, marker);
+                    });
+
+                })
+            }
+
+
+        </script>
+    </section>
+}
+

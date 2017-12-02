@@ -1,0 +1,48 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Manage your account";
+}
+
+
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Vitória <br /> Restaurante
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Configurações de Conta</p>
+        </div>
+    </div>
+</div>
+<div>
+    <h4>Alterar senha</h4>
+    <hr />
+
+    <dl class="dl-horizontal">
+        <dt>Senha:</dt>
+        <dd>
+            @if (Model.HasPassword)
+            {
+                <a asp-controller="Manage" asp-action="ChangePassword" class="btn-bracketed">Alterar</a>
+
+            }
+            else
+            {
+                <a asp-controller="Manage" asp-action="SetPassword" class="btn-bracketed">Create</a>
+            }
+        </dd>
+        <dt>Login social:</dt>
+        <dd>
+
+            <a asp-controller="Manage" asp-action="ManageLogins" class="btn-bracketed">Alterar</a>
+        </dd>
+        
+        
+    </dl>
+</div>

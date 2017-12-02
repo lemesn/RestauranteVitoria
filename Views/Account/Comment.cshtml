@@ -1,0 +1,45 @@
+﻿@model CommentViewModel
+@{
+    ViewData["Title"] = "Comment";
+}
+<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/Style.css">
+<link href="/css/font.css" rel="stylesheet" type="text/css">
+<link href="/css/font2.css" rel="stylesheet" type="=text/css">
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Vitória <br /> Restaurante
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Dica</p>
+        </div>
+    </div>
+</div>
+
+<form asp-controller="Account" asp-action="Comment" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+    <h4>Criar uma novo conta</h4>
+
+    <div asp-validation-summary="ModelOnly"></div>
+
+    <div class="form-group">
+        <label for="Usuario">Nome:</label>
+        <input class="form-control" asp-for="Usuario" />
+        <span asp-validation-for="Usuario"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Dica">Restaurante:</label>
+        <input class="form-control" asp-for="Dica" />
+        <span asp-validation-for="Dica"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Dar opinião</button>
+</form>

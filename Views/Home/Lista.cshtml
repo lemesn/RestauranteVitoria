@@ -1,0 +1,62 @@
+﻿@using VitoriaRestaurante.Models;
+@model List<Cliente>
+<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/Style.css">
+<link href="/css/font.css" rel="stylesheet" type="text/css">
+<link href="/css/font2.css" rel="stylesheet" type="=text/css">
+<style>
+    hr {
+        margin-top: 20px;
+        border: 0;
+        border-top: 1px solid #eee;
+    }
+
+    ._2pi8 {
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-top: 10em;
+    }
+    th, td {
+        font-size: 18px;
+    }
+</style>
+<div class="header-otherpage">
+    <div class="fullbg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="logo-otherpages">
+                    Vitória <br /> Restaurante
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="page-name">
+            <p class="author">Reviews</p>
+        </div>
+    </div>
+</div>
+
+<p>
+
+
+</p>
+<br />
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Restaurante</th>
+                    <th>Comentario</th>
+                </tr>
+            </thead>
+
+            @foreach (var Cliente in Model)
+            {
+                <tr>
+                    <td>@Cliente.Restaurante</td>
+                    <td>@Cliente.Comentario</td>
+                </tr>
+            }
+
+        </table>
